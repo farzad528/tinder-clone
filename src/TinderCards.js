@@ -4,28 +4,22 @@ import database from "./firebase";
 import "./TinderCards.css";
 
 function TinderCards() {
-  const [people, setPeople] = useState([
-    {
-      name: "steve jobs",
-      url:
-        "https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTY2MzU3OTcxMTUwODQxNTM1/steve-jobs--david-paul-morrisbloomberg-via-getty-images.jpg",
-    },
-    {
-      name: "mark zuckerberg",
-      url:
-        "https://i.insider.com/5f2c858f4dca6856c856df42?width=900&format=jpeg&auto=webp",
-    },
-  ]);
+  const [people, setPeople] = useState([]);
 
   // Piece of code which runs based on a condition
   useEffect(() => {
     // this is where the code runs...
 
-    database
+    const unsubscribe = database
       .collection("people")
       .onSnapshot((snapshot) =>
         setPeople(snapshot.docs.map((doc) => doc.data()))
       );
+
+    return () => {
+      // this is a cleanup...
+      unsubscribe();
+    };
   }, []);
 
   //   BAD
@@ -37,7 +31,6 @@ function TinderCards() {
 
   return (
     <div>
-      <h1> Tinder Cards</h1>
       <div className="tinderCards__cardContainer">
         {people.map((person) => (
           <TinderCard
