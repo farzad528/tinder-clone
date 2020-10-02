@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import TinderCard from "react-tinder-card";
+import database from "./firebase";
 import "./TinderCards.css";
 
 function TinderCards() {
@@ -17,6 +18,16 @@ function TinderCards() {
   ]);
 
   // Piece of code which runs based on a condition
+  useEffect(() => {
+    // this is where the code runs...
+
+    database
+      .collection("people")
+      .onSnapshot((snapshot) =>
+        setPeople(snapshot.docs.map((doc) => doc.data()))
+      );
+  }, []);
+
   //   BAD
   //      const people = []
   //     people.push('farzad', 'phil')
