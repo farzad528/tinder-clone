@@ -8,7 +8,7 @@ const firebaseConfig = {
   storageBucket: "tinder-clone-1b8a5.appspot.com",
   messagingSenderId: "392731349136",
   appId: "1:392731349136:web:09e806ed27a1452b7b4815",
-  measurementId: "G-TPQSFZK61G",
+  measurementId: "G-TPQSFZK61G"
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);

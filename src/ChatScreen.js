@@ -6,19 +6,19 @@ function ChatScreen() {
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([
     {
-      name: "Lebron",
+      name: "Rihanna",
       image:
-        "https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTY2NzA3MjE1MzQyNzczNTQw/lebron-james-photo-by-streeter-lecka_getty-images.jpg",
+        "https://cdn.britannica.com/83/211883-050-46933F1A/Rihanna-Barbadian-singer-Robyn-Fenty.jpg",
       message: "Whats up ❤️",
     },
     {
-      name: "Lebron",
+      name: "Rihanna",
       image:
-        "https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTY2NzA3MjE1MzQyNzczNTQw/lebron-james-photo-by-streeter-lecka_getty-images.jpg",
-      message: "You think I'm the G.O.A.T?",
+        "https://cdn.britannica.com/83/211883-050-46933F1A/Rihanna-Barbadian-singer-Robyn-Fenty.jpg",
+      message: "How you doing Farzad?",
     },
     {
-      message: "Nope, Kevin Durant!",
+      message: "Can I come under your Umbrella, ella, ella, eh, eh? 😉☔", 
     },
   ]);
 
@@ -33,7 +33,7 @@ function ChatScreen() {
   return (
     <div className="chatScreen">
       <p className="chatScreen__timestamp">
-        YOU MATCHED WITH LEBRON ON 11/11/2020
+        YOU MATCHED WITH RIHANNA ON 12/1/2020
       </p>
       {messages.map((message) =>
         message.name ? (

@@ -6,28 +6,28 @@ function Chats() {
   return (
     <div className="chats">
       <Chat
-        name="LeBron"
-        message="I am the best player in the world 👑"
+        name="Rihanna"
+        message="Can I come under your Umbrella, ella, ella, eh, eh?"
         timestamp="40 seconds ago"
-        profilePic="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTY2NzA3MjE1MzQyNzczNTQw/lebron-james-photo-by-streeter-lecka_getty-images.jpg"
+        profilePic="https://cdn.britannica.com/83/211883-050-46933F1A/Rihanna-Barbadian-singer-Robyn-Fenty.jpg"
       />
       <Chat
-        name="Stephen"
-        message="I blew a 3-1 lead 😢"
+        name="Lolo Jones"
+        message="Wanna race at the LSU track?"
         timestamp="55 minutes ago"
-        profilePic="https://imageproxy.themaven.net//https%3A%2F%2Fwww.biography.com%2F.image%2FMTM5OTQxMjg1NzA3MzkyMDQw%2Fstephen-curry-gettyimages-538912798_1600jpg.jpg"
+        profilePic="https://upload.wikimedia.org/wikipedia/commons/2/23/LoloJones2008.jpg"
       />
       <Chat
-        name="Michael"
-        message="I am the 🐐"
+        name="Ariana Grande"
+        message="Please don't say 'Thank you Next' on me?"
         timestamp="3 days ago"
-        profilePic="https://www.biography.com/.image/t_share/MTY2Njc5NDYzOTQ4NDYxNDA4/michael-jordan.jpg"
+        profilePic="https://www.biography.com/.image/t_share/MTQ3MzM3MTcxNjA5NTkzNjQ3/ariana_grande_photo_jon_kopaloff_getty_images_465687098.jpg"
       />
       <Chat
-        name="Kawhi"
-        message="Board man 🏀"
+        name="Taylor Swift"
+        message="If you reply to me, I promise I won't interrupt you anytime you speak!"
         timestamp="1 week ago"
-        profilePic="https://s.yimg.com/uu/api/res/1.2/i6EIhC6mWLhuXOjwQgmiYg--~B/aD0xMDgwO3c9MTkyMDtzbT0xO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/omnisport.uk/78a5b9d25dd7bfed22d8d42bed0f4ee9"
+        profilePic="https://www.biography.com/.image/t_share/MTU1NDc3MTEyODE0MzE0NTcy/taylor-swift-attends-the-2016-vanity-fair-oscar-party-hosted-by-graydon-carter-at-wallis-annenberg-center-for-the-performing-arts-on-february-28-2016-in-beverly-hills-california-photo-by-anthony-harve.jpg"
       />
     </div>
   );

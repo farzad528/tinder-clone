@@ -1,10 +1,9 @@
 import React from "react";
 import "./App.css";
 import Header from "./Header";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import TinderCards from "./TinderCards";
 import SwipeButtons from "./SwipeButtons";
-import Firebase from "./firebase";
 import Chats from "./Chats";
 import ChatScreen from "./ChatScreen";
 
@@ -32,17 +31,6 @@ function App() {
   );
 }
 
-export default App;
-{
-  /* Tinder Cards */
-}
-{
-  /* Buttons below tinder cards */
-}
 
-{
-  /* Chats screen */
-}
-{
-  /* Individual chat screen */
-}
+export default App;
+
